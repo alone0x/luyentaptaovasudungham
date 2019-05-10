@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="hienThi()">
+<script>
+
+
+    function soSanh(a, b) {
+        return a > b;
+
+    }
+
+    function tinhTong(a, b) {
+        let tong = a + b;
+        return tong;
+    }
+
+    function hienThi() {
+        if (soSanh(1, 2)) {
+            alert(" a lớn hơn b");
+        } else {
+            let tong = tinhTong(1, 2);
+            document.write(tong);
+        }
+    }
+</script>
+</body>
+</html>

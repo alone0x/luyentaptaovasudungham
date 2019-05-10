@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="hienThi()">hiển thị</button>
+<script>
+    let ngoiSao1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let ngoiSao2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function kiemTra() {
+        let nhap = prompt(" nhập vào tên chòm sao ");
+
+        for (i = 0; i < ngoiSao1.length; i++) {
+            console.log(nhap);
+            if (nhap === ngoiSao1[i]) {
+                return i;
+            }
+
+        }
+
+    }
+
+    function hienThi() {
+      let i= kiemTra();
+        if (i !== ngoiSao1.length) {
+            alert(ngoiSao2[i])
+        } else alert("không tìm thấy : ")
+    }
+
+</script>
+</body>
+</html>
